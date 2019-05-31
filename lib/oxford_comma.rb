@@ -1,9 +1,6 @@
 def oxford_comma(array)
-  array.join
+  if array.length == 1 
+    return "#{array}"
+  elsif array.length == 2 
+    return array.join("and")
 end
-
-def oxford_comma(array, array1)
-  array.split("and")
-end
-
-
